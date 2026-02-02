@@ -1,0 +1,78 @@
+baseURL = "https://lukeelten.github.io/rappelkiste-website/"
+languageCode = "de"
+title = "Elterninitiative Kindergarten Rappelkiste e.V."
+theme = "blowfish"
+defaultContentLanguage = "de"
+languageName = "Deutsch"
+
+# Enable these outputs for Hugo to generate the site properly
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+# Site parameters
+[params]
+description = "Willkommen bei der Elterninitiative Kindergarten Rappelkiste in Elten, Emmerich am Rhein"
+siteLogo = "/images/logo.png"
+colorScheme = "auto"
+defaultTheme = "light"
+darkMode = true
+isoCode = "de"
+displayName = "DE"
+
+# Author Names
+[params.author]
+name = "Kindergarten Rappelkiste"
+image = "/images/logo.png"
+headline = "Elterninitiative Kindergarten Rappelkiste e.V."
+bio = "Wir sind eine Elterninitiative"
+links = [
+  { facebook = "https://www.facebook.com/KindergartenRappelkiste" }
+]
+
+# Organization details
+[params.org]
+name = "Elterninitiative Kindergarten Rappelkiste e.V."
+address = "Elten, Emmerich am Rhein, NRW, Germany"
+email = "vorstand@rappelkiste-elten.de"
+phone = "+49 (0) 2828 1380"
+
+# Social media links
+[[params.socialIcons]]
+name = "Email"
+url = "mailto:vorstand@rappelkiste-elten.de"
+icon = "envelope"
+
+[[params.socialIcons]]
+name = "Facebook"
+url = "https://www.facebook.com/KindergartenRappelkiste"
+icon = "facebook"
+
+# Navigation menu
+[[menu.main]]
+name = "Startseite"
+pageRef = "/"
+weight = 10
+
+[[menu.main]]
+name = "Über Uns"
+pageRef = "/about"
+weight = 20
+
+[[menu.main]]
+name = "Kontakt"
+pageRef = "/contact"
+weight = 50
+
+[[menu.main]]
+name = "Aktuelles"
+pageRef = "/news"
+weight = 60
+
+# Markdown settings
+[markup.goldmark.renderer]
+unsafe = true
+
+# Image processing
+[imaging]
+quality = 85
+anchor = "smart"
